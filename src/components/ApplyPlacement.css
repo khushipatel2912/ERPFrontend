@@ -1,0 +1,88 @@
+.apply-container {
+    font-family: 'Roboto', sans-serif;
+    color: #241818;
+    min-height: 100vh;
+    padding: 20px;
+    display: flex;
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+    background: url('https://serosoft.in/client_assets/IIITB/homepage.jpg') no-repeat center center/cover;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .apply-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Adjust opacity to 0.5 for a more subtle dark overlay */
+    backdrop-filter: blur(4px);
+    z-index: -1; /* Ensure overlay stays behind content */
+  }
+  
+  .apply-form-card {
+    background-color: rgba(255, 255, 255, 0.95); /* Slightly less transparency */
+    border-radius: 12px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    padding: 30px;
+    max-width: 500px; /* Restrict the card width */
+    width: 100%; /* Ensure responsiveness */
+    text-align: center;
+  }
+  
+  .apply-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 20px;
+    color: #343a40;
+  }
+  
+  .form-label {
+    font-weight: bold; /* Make the labels bold */
+    color: #495057;
+  }
+  
+  .form-control {
+    border-radius: 5px;
+    border: 1px solid #ced4da;
+    padding: 10px;
+  }
+  
+  .form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+  }
+  
+  .btn-primary {
+    background-color: #e39b1e; /* Primary button color */
+    border-color: #e39b1e;
+    padding: 10px;
+    font-weight: 500;
+    border-radius: 5px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+  }
+  
+  .btn-primary:hover {
+    background-color: #f7c256; /* Hover color */
+    transform: scale(1.05);
+  }
+  
+  .text-danger {
+    font-size: 0.9rem;
+    margin-top: 10px;
+  }
+  
+  @media (max-width: 768px) {
+    .apply-form-card {
+      padding: 20px;
+      max-width: 90%; /* Make it responsive for smaller screens */
+    }
+  
+    .apply-title {
+      font-size: 1.5rem;
+    }
+  }
+  
